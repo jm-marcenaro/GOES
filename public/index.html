@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>GOES Viewer</title>
+    
+    <link rel="stylesheet" href='./styles/styles.css'>
+
+    <!-- Import ui.js -->
+    <script type="module" src="ui.js"></script>
+
+</head>
+
+<body>
+
+    <h1>Welcome to GOES Viewer</h1>
+
+    <div>
+
+        <label for="input-text">Enter date:</label>
+        
+        <input type="text" id="input-text" placeholder="yyyy-mm-dd hh:mm">
+
+        <!-- Button to run Python script and fetch LATEST images -->
+        <button id="datetime-now" class="button-primary">Now!</button>
+
+        <!-- Button to run Python script and fetch images for DOI -->
+        <button id="run-script-btn" class="button-primary">Get images</button>
+
+    </div>
+    
+    <!-- Container to hold images -->
+    <div id="image-container">
+        
+        <div id="overlay"></div>
+    
+    </div>
+
+    <!-- Navigation buttons -->
+    <div class="control-buttons">
+    
+        <button id="prev-btn">&laquo; Previous</button>
+        <button id="next-btn">Next &raquo;</button>
+        <span id="image-counter">0/0</span>
+    
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin-bottom: 5px; /* Adjust the space as needed (e.g., 10px) */
+}
+
+#image-container {
+    width: 400px;
+    height: 550px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: none;
+    border-radius: 5px;
+    border: 2px solid black; /* Add black border */
+}
+
+.timestamp-display {
+    position: absolute;
+    bottom: 5px; /* Adjust this value to set how far from the top you want it */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: add background for readability */
+    color: white; /* Optional: change text color */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.active {
+    display: block;
+    width: auto; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the image */
+}
+
+
+.control-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.control-buttons button {
+    background-color: #e0e0e0;
+    border: none;
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.control-buttons button:hover {
+    background-color: #d0d0d0;
+}
+
+.control-buttons button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Container for the input and button */
+#input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for the input text */
+#input-text {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 200px; /* Adjust the width as needed */
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+.button-primary {
+    margin-top: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.button-primary:hover {
+    background-color: #45a049;
+}
+
+
+#image-counter {
+    font-size: 16px;
+    background-color: #e0e0e0;
+    border: 1px solid #b0b0b0;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 0 10px;
+    display: inline-block;
+    text-align: center;
+    color: #333;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 85%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35); /* Semi-transparent black */
+    transform: translateX(-50%);
+    display: none; /* Hidden by default */
+    z-index: 10; /* Ensure it sits above images */
+}
