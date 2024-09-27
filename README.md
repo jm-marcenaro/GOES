@@ -1,9 +1,9 @@
 ## Visualizador GOES
 
 ### Descripción 
-Este proyecto descarga imágenes GOES 16 del territorio argentino desde el servidor de Google Earth Engine (GEE) a través de su API de Python y luego las visualiza en una interfaz web servida a través de Node.js. 
+Este proyecto descarga imágenes GOES 16 del territorio argentino desde el servidor de Google Earth Engine (GEE) a través de su API de Python y luego las visualiza en una interfaz web servida a través de Node.js. Para saber más acerca del proyecto podes leer mi [blog.]([https://jm-marcenaro.github.io/hugo-toha.github.io/posts/nodejs/nodejs_2/)
 
-Las imágenes que se visualizn corresponden al período comprendido entre la fecha ingresada y 6 horas menos cada 30 minutos.
+Las imágenes que se visualizan corresponden al período comprendido entre la fecha ingresada y 6 horas menos cada 30 minutos.
 
 El procesamiento sobre las imágenes para obtener un producto en color verdadero se realizó siguiendo los lineamientos que se indican en el siguiente [artículo.](https://jstnbraaten.medium.com/goes-in-earth-engine-53fbc8783c16)
 
